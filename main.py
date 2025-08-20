@@ -9,8 +9,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # --- Secrets come from environment variables on Render ---
-TOKEN = os.getenv("8300522872:AAEl-aNf48YnWyLjB7Rm6iQ62byq-lDcXvc")
-CHAT_ID = os.getenv("398896616")  # keep as string; we'll cast when sending
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 if not TOKEN or not CHAT_ID:
     raise RuntimeError("Please set TOKEN and CHAT_ID environment variables.")
